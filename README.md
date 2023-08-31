@@ -2,11 +2,13 @@
 
 [ElectroSmith POD](https://www.electro-smith.com/daisy/pod)
 
-Adds two potentiometers and four buttons to the pod.
+Adds two potentiometers and four buttons to the pod. Check the included KiCad 7 [schematic](hardware/pod_basic_expander.kicad_sch) for details.
 
 ![Expander](img/expander.png)
 
 ## libdaisy changes
+
+**daisy_pod.h** and **daisy_pod.cpp** require a couple of changes to accomodate the new pots and buttons.
 
 ### daisy_pod.cpp
 ```cpp
@@ -41,7 +43,7 @@ void DaisyPod::InitButtons()
  {
      // button1
      button1.Init(seed.GetPin(SW_1_PIN));
-+
+
      // button2
      button2.Init(seed.GetPin(SW_2_PIN));
  
@@ -56,7 +58,7 @@ void DaisyPod::InitButtons()
 +
 +    // button6
 +    button6.Init(seed.GetPin(SW_6_PIN));
-+
+
      buttons[BUTTON_1] = &button1;
      buttons[BUTTON_2] = &button2;
 +    buttons[BUTTON_3] = &button3;
@@ -82,6 +84,7 @@ void DaisyPod::InitButtons()
 +    knobs[KNOB_4] = &knob4;
      for(int i = 0; i < KNOB_LAST; i++)
      {
+        ...
      }
 }
 
@@ -119,9 +122,7 @@ class DaisyPod
 +        button5,               /**< & */
 +        button6,               /**< & */
          *buttons[BUTTON_LAST]; /**< & */
-        RgbLed led1,               /**< & */
-        led2;                  /**< & */
-
+ 
      };
  
 ```
