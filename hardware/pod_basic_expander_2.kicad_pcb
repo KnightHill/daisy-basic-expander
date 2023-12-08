@@ -660,9 +660,6 @@
     (stroke (width 0.05) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 9d66a6c6-0e5d-42bd-9c68-3989699993f8))
   (gr_circle (center 76 69) (end 77 70)
     (stroke (width 0.05) (type default)) (fill none) (layer "Edge.Cuts") (tstamp dc0e15bd-66a1-4e30-a0d3-73d88a720141))
-  (gr_text "KnightHill Engineering\n" (at 90 70) (layer "F.SilkS") (tstamp 365673e3-e2ea-42e6-b58b-db69050186c2)
-    (effects (font (size 1 1) (thickness 0.1)) (justify left bottom))
-  )
 
   (segment (start 107 91) (end 108.7 92.7) (width 0.2) (layer "B.Cu") (net 5) (tstamp 2de34303-6e93-4467-8aee-3f4990303d65))
   (segment (start 107 87) (end 107 91) (width 0.2) (layer "B.Cu") (net 5) (tstamp 4c22afc7-4fb0-45df-90e7-4c847d7d2360))
