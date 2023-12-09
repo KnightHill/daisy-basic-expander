@@ -1,8 +1,8 @@
-#include "daisy_pod.h"
+#include "basic_exp.h"
 
 using namespace daisy;
 
-static DaisyPod hw;
+static BasicExp hw;
 
 bool  led1, led2, led3, led4, led5, led6;
 float brightness1, brightness2;
