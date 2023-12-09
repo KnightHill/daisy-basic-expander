@@ -2,7 +2,7 @@
 TARGET = BasicExpander
 
 # Sources
-CPP_SOURCES = main.cpp
+CPP_SOURCES = main.cpp basic_exp.cpp
 
 # Library Locations
 LIBDAISY_DIR = ../../libDaisy
