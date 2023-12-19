@@ -85,7 +85,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "/home/bojidar/gerber/")
+      (outputdirectory "/home/bojidar/src/daisy/khill/BasicExpander/hardware/DrillMapFiles/")
     )
   )
 
