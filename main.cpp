@@ -4,7 +4,7 @@ using namespace daisy;
 
 static BasicExp hw;
 
-bool  led1, led2, led3, led4, led5, led6;
+bool  led1, led2, led3, led4, led5, led6, led7, led8;
 float brightness1, brightness2;
 
 struct RGB
@@ -35,7 +35,7 @@ int main()
     hw.StartAdc();
 
     brightness1 = brightness2 = 1.0f;
-    led1 = led2 = led3 = led4 = led5 = led6 = false;
+    led1 = led2 = led3 = led4 = led5 = led6 = led7 = led8 = false;
 
     BlinkLED({1, 1, 1});
 
@@ -66,6 +66,13 @@ int main()
         if(hw.button6.RisingEdge())
             led6 = !led6;
 
+        if(hw.button7.RisingEdge())
+            led7 = !led7;
+
+        if(hw.button8.RisingEdge())
+            led8 = !led8;
+
+
         if(led1)
         {
             hw.led1.Set(brightness1, 0, 0);
@@ -83,19 +90,31 @@ int main()
         }
         else if(led4)
         {
-            hw.led2.Set(brightness2, 0, 0);
+            hw.led1.Set(brightness1, brightness1, 0);
             hw.UpdateLeds();
         }
         else if(led5)
         {
-            hw.led2.Set(0, brightness2, 0);
+            hw.led2.Set(brightness2, 0, 0);
             hw.UpdateLeds();
         }
         else if(led6)
         {
+            hw.led2.Set(0, brightness2, 0);
+            hw.UpdateLeds();
+        }
+        else if(led7)
+        {
             hw.led2.Set(0, 0, brightness2);
             hw.UpdateLeds();
         }
+        else if(led8)
+        {
+            hw.led2.Set(brightness1, brightness1, 0);
+            hw.UpdateLeds();
+        }
+        
+
         else
         {
             hw.led1.Set(0, 0, 0);
