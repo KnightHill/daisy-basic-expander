@@ -1,6 +1,8 @@
 # Project Name
 TARGET = BasicExpander
 
+LDFLAGS = -u _printf_float
+
 # Sources
 CPP_SOURCES = main.cpp basic_exp.cpp
 
