@@ -31,8 +31,8 @@ constexpr Pin LED_2_B_PIN = seed::D23;
 
 constexpr Pin KNOB_1_PIN = seed::D21;
 constexpr Pin KNOB_2_PIN = seed::D15;
-constexpr Pin KNOB_3_PIN = seed::D22;
-constexpr Pin KNOB_4_PIN = seed::D16;
+constexpr Pin KNOB_3_PIN = seed::D16;
+constexpr Pin KNOB_4_PIN = seed::D22;
 
 /*
 // Leaving in place until older hardware is totally deprecated.
