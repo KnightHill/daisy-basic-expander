@@ -10,4 +10,6 @@ Adds two potentiometers and six buttons to the pod. Check the included KiCad 7 [
 
 ![Expander v1](img/exp_1_pcb2.jpg)
 
+ # Disclamer
 
+This is a hobby project. I accept no responsibility for damage to you Daisy Seed, external equipment or anything else. You use this code and harware at your own risk.
