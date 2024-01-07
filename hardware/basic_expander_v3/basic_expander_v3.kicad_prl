@@ -64,8 +64,8 @@
       39,
       40
     ],
-    "visible_layers": "ffdffff_ffffffff",
-    "zone_display_mode": 0
+    "visible_layers": "ffdffff_7fffffff",
+    "zone_display_mode": 1
   },
   "meta": {
     "filename": "basic_expander_v3.kicad_prl",
